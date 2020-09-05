@@ -11,7 +11,7 @@ enum pen_onoff {
 namespace eureka_plotter_car {
   //% color="#3943c6" weight=71　blockId=plottercar_forward
   //% block="前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
-  //% F_cm.mini=0 F_cm.max=20
+  //% F_cm.min=0 F_cm.max=20
   export function plottercar_forward(F_cm: number): void {
 	    led.enable(false)
     for (let index = 0; index < (F_cm / 18.23) * 512; index++) {
@@ -80,6 +80,87 @@ namespace eureka_plotter_car {
       basic.pause(wait);
       pins.digitalWritePin(DigitalPin.P3, 0);
       pins.digitalWritePin(DigitalPin.P13, 1);
+      pins.digitalWritePin(DigitalPin.P4, 0);
+      pins.digitalWritePin(DigitalPin.P14, 0);
+      pins.digitalWritePin(DigitalPin.P6, 0);
+      pins.digitalWritePin(DigitalPin.P15, 0);
+      pins.digitalWritePin(DigitalPin.P7, 1);
+      pins.digitalWritePin(DigitalPin.P16, 1);
+      basic.pause(wait);
+    }
+  }
+
+  //% color="#3943c6" weight=71　blockId=plottercar_back
+  //% block="後へ |%F_cm| ｃｍ進む" group="3　基本の動き"
+  //% F_cm.min=0 F_cm.max=20
+  export function plottercar_back(F_cm: number): void {
+	    led.enable(false)
+    for (let index = 0; index < (F_cm / 18.23) * 512; index++) {
+      pins.digitalWritePin(DigitalPin.P3, 0);
+      pins.digitalWritePin(DigitalPin.P13, 1);
+      pins.digitalWritePin(DigitalPin.P4, 0);
+      pins.digitalWritePin(DigitalPin.P14, 0);
+      pins.digitalWritePin(DigitalPin.P6, 0);
+      pins.digitalWritePin(DigitalPin.P15, 0);
+      pins.digitalWritePin(DigitalPin.P7, 1);
+      pins.digitalWritePin(DigitalPin.P16, 1);
+      basic.pause(wait);
+      pins.digitalWritePin(DigitalPin.P3, 0);
+      pins.digitalWritePin(DigitalPin.P13, 1);
+      pins.digitalWritePin(DigitalPin.P4, 0);
+      pins.digitalWritePin(DigitalPin.P14, 0);
+      pins.digitalWritePin(DigitalPin.P6, 1);
+      pins.digitalWritePin(DigitalPin.P15, 0);
+      pins.digitalWritePin(DigitalPin.P7, 1);
+      pins.digitalWritePin(DigitalPin.P16, 0);
+      basic.pause(wait);
+      pins.digitalWritePin(DigitalPin.P3, 0);
+      pins.digitalWritePin(DigitalPin.P13, 1);
+      pins.digitalWritePin(DigitalPin.P4, 0);
+      pins.digitalWritePin(DigitalPin.P14, 1);
+      pins.digitalWritePin(DigitalPin.P6, 1);
+      pins.digitalWritePin(DigitalPin.P15, 0);
+      pins.digitalWritePin(DigitalPin.P7, 0);
+      pins.digitalWritePin(DigitalPin.P16, 0);
+      basic.pause(wait);
+      pins.digitalWritePin(DigitalPin.P3, 1);
+      pins.digitalWritePin(DigitalPin.P13, 0);
+      pins.digitalWritePin(DigitalPin.P4, 1);
+      pins.digitalWritePin(DigitalPin.P14, 1);
+      pins.digitalWritePin(DigitalPin.P6, 1);
+      pins.digitalWritePin(DigitalPin.P15, 0);
+      pins.digitalWritePin(DigitalPin.P7, 0);
+      pins.digitalWritePin(DigitalPin.P16, 0);
+      basic.pause(wait);
+      pins.digitalWritePin(DigitalPin.P3, 0);
+      pins.digitalWritePin(DigitalPin.P13, 1);
+      pins.digitalWritePin(DigitalPin.P4, 1);
+      pins.digitalWritePin(DigitalPin.P14, 1);
+      pins.digitalWritePin(DigitalPin.P6, 0);
+      pins.digitalWritePin(DigitalPin.P15, 1);
+      pins.digitalWritePin(DigitalPin.P7, 0);
+      pins.digitalWritePin(DigitalPin.P16, 0);
+      basic.pause(wait);
+      pins.digitalWritePin(DigitalPin.P3, 1);
+      pins.digitalWritePin(DigitalPin.P13, 0);
+      pins.digitalWritePin(DigitalPin.P4, 1);
+      pins.digitalWritePin(DigitalPin.P14, 0);
+      pins.digitalWritePin(DigitalPin.P6, 0);
+      pins.digitalWritePin(DigitalPin.P15, 1);
+      pins.digitalWritePin(DigitalPin.P7, 0);
+      pins.digitalWritePin(DigitalPin.P16, 0);
+      basic.pause(wait);
+      pins.digitalWritePin(DigitalPin.P3, 1);
+      pins.digitalWritePin(DigitalPin.P13, 0);
+      pins.digitalWritePin(DigitalPin.P4, 0);
+      pins.digitalWritePin(DigitalPin.P14, 0);
+      pins.digitalWritePin(DigitalPin.P6, 0);
+      pins.digitalWritePin(DigitalPin.P15, 1);
+      pins.digitalWritePin(DigitalPin.P7, 0);
+      pins.digitalWritePin(DigitalPin.P16, 1);
+      basic.pause(wait);
+      pins.digitalWritePin(DigitalPin.P3, 1);
+      pins.digitalWritePin(DigitalPin.P13, 0);
       pins.digitalWritePin(DigitalPin.P4, 0);
       pins.digitalWritePin(DigitalPin.P14, 0);
       pins.digitalWritePin(DigitalPin.P6, 0);
