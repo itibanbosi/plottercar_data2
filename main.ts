@@ -9,6 +9,15 @@ enum pen_onoff {
 //% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰ" icon="\uf1b9"
 
 namespace eureka_plotter_car {
+
+
+
+
+
+
+
+
+
   //% color="#3943c6" weight=71　blockId=plottercar_forward
   //% block="前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
   //% F_cm.min=0 F_cm.max=20
@@ -23,7 +32,9 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 1);
       pins.digitalWritePin(DigitalPin.P16, 1);
- basic.pause(wait);
+      let i=0;
+      for ( i = 0; i < 1000; i++ );{}
+
       pins.digitalWritePin(DigitalPin.P3, 1);
       pins.digitalWritePin(DigitalPin.P13, 0);
       pins.digitalWritePin(DigitalPin.P4, 0);
@@ -32,7 +43,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 1);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 1);
-basic.pause(wait);
+      for ( i = 0; i < 1000; i++ );{}
       pins.digitalWritePin(DigitalPin.P3, 1);
       pins.digitalWritePin(DigitalPin.P13, 0);
       pins.digitalWritePin(DigitalPin.P4, 1);
@@ -41,7 +52,7 @@ basic.pause(wait);
       pins.digitalWritePin(DigitalPin.P15, 1);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 0);
-basic.pause(wait);
+      for ( i = 0; i < 1000; i++ );{}
       pins.digitalWritePin(DigitalPin.P3, 0);
       pins.digitalWritePin(DigitalPin.P13, 1);
       pins.digitalWritePin(DigitalPin.P4, 1);
@@ -50,7 +61,7 @@ basic.pause(wait);
       pins.digitalWritePin(DigitalPin.P15, 1);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 0);
-basic.pause(wait); 
+      for ( i = 0; i < 1000; i++ );{}
       pins.digitalWritePin(DigitalPin.P3, 1);
       pins.digitalWritePin(DigitalPin.P13, 0);
       pins.digitalWritePin(DigitalPin.P4, 1);
@@ -59,7 +70,7 @@ basic.pause(wait);
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 0);
-basic.pause(wait); 
+      for ( i = 0; i < 1000; i++ );{}
       pins.digitalWritePin(DigitalPin.P3, 0);
       pins.digitalWritePin(DigitalPin.P13, 1);
       pins.digitalWritePin(DigitalPin.P4, 0);
@@ -68,7 +79,7 @@ basic.pause(wait);
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 0);
       pins.digitalWritePin(DigitalPin.P16, 0);
- basic.pause(wait);
+       for ( i = 0; i < 1000; i++ );{}
       pins.digitalWritePin(DigitalPin.P3, 0);
       pins.digitalWritePin(DigitalPin.P13, 1);
       pins.digitalWritePin(DigitalPin.P4, 0);
@@ -77,7 +88,7 @@ basic.pause(wait);
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 1);
       pins.digitalWritePin(DigitalPin.P16, 0);
-basic.pause(wait);
+      for ( i = 0; i < 1000; i++ );{}
       pins.digitalWritePin(DigitalPin.P3, 0);
       pins.digitalWritePin(DigitalPin.P13, 1);
       pins.digitalWritePin(DigitalPin.P4, 0);
@@ -86,7 +97,7 @@ basic.pause(wait);
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 1);
       pins.digitalWritePin(DigitalPin.P16, 1);
- basic.pause(wait);
+       for ( i = 0; i < 1000; i++ );{}
     }
   }
 
