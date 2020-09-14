@@ -5,15 +5,9 @@ enum pen_onoff {
 }
 
 
-
 //% color="#3943c6" block="ﾌﾟﾛｯﾀｰ・ｶｰ" icon="\uf1b9"
 
 namespace eureka_plotter_car {
-
-
-
-
-
 
 
 
@@ -100,6 +94,7 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P16, 1);
        for ( i = 0; i < 500; i++ );{}
     }
+
   }
 
   //% color="#3943c6" weight=69　blockId=plottercar_back
