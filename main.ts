@@ -187,7 +187,7 @@ namespace eureka_plotter_car {
   //% block="左回り　角度 |%L_degree| " group="3　基本の動き"
   //% L_degree.min=0 L_degree.max=360
     export function plottercar_L_cycle(L_degree: number): void {
-    for (let index = 0; index < (L_degree / 360) * 512 * 1.691; index++) {
+    for (let index = 0; index < (L_degree / 360) * 512 * 1.709; index++) {
       pins.digitalWritePin(DigitalPin.P3, 1);
       pins.digitalWritePin(DigitalPin.P4, 0);
       pins.digitalWritePin(DigitalPin.P6, 0);
@@ -281,7 +281,7 @@ namespace eureka_plotter_car {
   //% block="右回り　角度 |%R_degree| " group="3　基本の動き"
   //% R_degree.min=0 R_degree.max=360
   export function plottercar_R_cycle(R_degree: number): void {
-    for (let index = 0; index < (R_degree / 360) * 512 * 1.691; index++) {
+    for (let index = 0; index < (R_degree / 360) * 512 * 1.709; index++) {
       pins.digitalWritePin(DigitalPin.P3, 0);
       pins.digitalWritePin(DigitalPin.P4, 0);
       pins.digitalWritePin(DigitalPin.P6, 0);
