@@ -14,7 +14,7 @@ namespace eureka_plotter_car {
 
   //% color="#3943c6" weight=71　blockId=plottercar_forward
   //% block="前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
-/*  //% F_cm.min=0 F_cm.max=20*/
+/*  //% F_cm.min=0 F_cm.max=20   */
   export function plottercar_forward(F_cm: number): void {
 	    led.enable(false)
       for (let index = 0; index < (F_cm/18.2) * 512 ; index++) { 
@@ -98,7 +98,7 @@ namespace eureka_plotter_car {
 
   //% color="#3943c6" weight=69　blockId=plottercar_back
   //% block="後へ |%F_cm| ｃｍ進む" group="3　基本の動き"
-/*  //% F_cm.min=0 F_cm.max=20*/
+/*  //% F_cm.min=0 F_cm.max=20    */
   export function plottercar_back(F_cm: number): void {
 	    led.enable(false)
     for (let index = 0; index < (F_cm / 18.2) * 512; index++) {
@@ -180,7 +180,7 @@ namespace eureka_plotter_car {
 
   //% color="#3943c6" weight=66　blockId=plottercar_L_cycle
   //% block="左回り　角度 |%L_degree| " group="3　基本の動き"
-/*  //% L_degree.min=0 L_degree.max=360*/
+/*  //% L_degree.min=0 L_degree.max=360     */
     export function plottercar_L_cycle(L_degree: number): void {
     for (let index = 0; index < (L_degree / 360) * 512*1.62; index++) {
       pins.digitalWritePin(DigitalPin.P3, 1);
@@ -274,7 +274,7 @@ namespace eureka_plotter_car {
 
   //% color="#3943c6" weight=64　blockId=plottercar_R_cycle
   //% block="右回り　角度 |%R_degree| " group="3　基本の動き"
-/*  //% R_degree.min=0 R_degree.max=360*/
+/*  //% R_degree.min=0 R_degree.max=360     */
   export function plottercar_R_cycle(R_degree: number): void {
     for (let index = 0; index < (R_degree / 360) * 512 * 1.62; index++) {
       pins.digitalWritePin(DigitalPin.P3, 0);
