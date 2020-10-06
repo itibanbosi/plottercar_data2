@@ -14,7 +14,7 @@ namespace eureka_plotter_car {
 
   //% color="#3943c6" weight=71　blockId=plottercar_forward
   //% block="前へ |%F_cm| ｃｍ進む" group="3　基本の動き"
-/*  //% F_cm.min=0 F_cm.max=20   */
+
   export function plottercar_forward(F_cm: number): void {
 	    led.enable(false)
       for (let index = 0; index < (F_cm/18.2) * 512 ; index++) { 
