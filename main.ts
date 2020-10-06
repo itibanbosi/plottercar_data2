@@ -18,6 +18,10 @@ namespace eureka_plotter_car {
   export function plottercar_forward(F_cm: number): void {
 	    led.enable(false)
       for (let index = 0; index < (F_cm/18.2) * 512 ; index++) { 
+
+      let i=0;
+
+     for ( i = 0; i < 500; i++ );{}
       pins.digitalWritePin(DigitalPin.P3, 1);
       pins.digitalWritePin(DigitalPin.P13, 0);
       pins.digitalWritePin(DigitalPin.P4, 0);
@@ -26,7 +30,6 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P7, 1);
       pins.digitalWritePin(DigitalPin.P16, 1);
-      let i=0;
       for ( i = 0; i < 500; i++ );{}
 
       pins.digitalWritePin(DigitalPin.P3, 1);
@@ -183,6 +186,9 @@ namespace eureka_plotter_car {
 
     export function plottercar_L_cycle(L_degree: number): void {
     for (let index = 0; index < (L_degree / 360) * 512*1.62; index++) {
+      let i=0;
+
+      for ( i = 0; i < 500; i++ );{}
       pins.digitalWritePin(DigitalPin.P3, 1);
       pins.digitalWritePin(DigitalPin.P4, 0);
       pins.digitalWritePin(DigitalPin.P6, 0);
@@ -191,7 +197,6 @@ namespace eureka_plotter_car {
       pins.digitalWritePin(DigitalPin.P14, 0);
       pins.digitalWritePin(DigitalPin.P15, 0);
       pins.digitalWritePin(DigitalPin.P16, 1);
-      let i=0;
       for ( i = 0; i < 500; i++ );{}
       pins.digitalWritePin(DigitalPin.P3, 1);
       pins.digitalWritePin(DigitalPin.P4, 0);
